@@ -5,6 +5,7 @@ import UndertrialDashboard from './components/UndertrialDashboard';
 import WelcomePage from './components/WelcomePage';
 import LegalAidDashboard from './components/LegalAidDashboard';
 import JudicialAuthority from './components/JudicialAuthority';
+// import NewCase from './components/NewCase';  // Import NewCase component
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/undertrial-dashboard" element={<UndertrialDashboard />} />
         <Route path="/legal-aid-dashboard" element={<LegalAidDashboard />} />
         <Route path="/judicial-authority" element={<JudicialAuthority />} />
+        {/* <Route path="/new-case-modal" element={<NewCaseModal />} /> New case route */}
         {/* Add other routes here */}
       </Routes>
     </Router>
