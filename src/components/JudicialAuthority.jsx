@@ -102,12 +102,12 @@ function JudicialAuthority() {
             <div className="analog-meter">
               <div className="meter">
                 <div className="needle"></div>
-                <div className="red-zone"></div>
-                <div className="green-zone"></div>
+                <div className="red-zone"> <span style={{color: 'white'}}>DENY</span></div>
+                <div className="green-zone"><span style={{color: 'white'}}>AWARD</span></div>
               </div>
               <div className="labels">
-                <span>DENY</span>
-                <span>AWARD</span>
+                
+               
               </div>
             </div>
           </div>

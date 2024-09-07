@@ -990,6 +990,9 @@ form textarea {
 
 .analog-meter {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .meter {
