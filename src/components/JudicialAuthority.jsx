@@ -41,7 +41,7 @@ function JudicialAuthority() {
       setMessages([...messages, { type: 'user', text: input }]);
       setInput('');
       setTimeout(() => {
-        setMessages(prevMessages => [...prevMessages, { type: 'bot', text: 'This is a response from the chatbot.' }]);
+        setMessages(prevMessages => [...prevMessages, { type: 'bot', text: 'The individual is facing charges for cybercrime and crimes against women, including online harassment, unauthorized data access, and misuse of digital platforms to intimidate and exploit women. Legal action has been initiated under relevant cyber and gender protection laws.' }]);
       }, 500); // Simulate bot response delay
     }
   };

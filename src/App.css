@@ -281,9 +281,15 @@ footer ul li:hover {
   margin-top: 20px;
 }
 
-.ml-prediction p {
-  font-weight: bold;
-  margin-bottom: 10px;
+/* .ml-prediction .sections{
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+} */
+
+.ml-prediction .sections p {
+  /* font-weight: bold; */
+  font-size: 14px;
 }
 
 .ml-prediction label {
@@ -339,7 +345,7 @@ footer ul li:hover {
 
 
 /* WelcomePage.css */
-.welcome-page {
+/* .welcome-page {
   height: 100vh;
   display: flex;
   flex-direction: row;
@@ -348,7 +354,71 @@ footer ul li:hover {
   background-color: #f5f5f5;
   text-align: center;
   width: 100vw;
-  /* gap: 50px; */
+} */
+
+/* .welcome-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.welcome-image img {
+  max-width: 70%;
+  height: auto;
+}
+
+.welcome-content {
+  text-align: center;
+}
+
+.welcome-content .logo{
+  width: 60px;
+}
+
+.welcome-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.welcome-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.enter-button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.enter-button:hover {
+  background-color: #218838;
+} */
+
+
+/* Main Welcome Page Styles */
+/* .welcome-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  text-align: center;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+} */
+
+/* .welcome-page.fade-out {
+  opacity: 0;
 }
 
 .welcome-image {
@@ -367,9 +437,91 @@ footer ul li:hover {
   text-align: center;
 }
 
-.welcome-content .logo{
+.welcome-content .logo {
   width: 60px;
-  /* margin-bottom: 15px; */
+}
+
+.welcome-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.welcome-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.enter-button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.enter-button:hover {
+  background-color: #218838;
+} */
+
+/* Loading spinner styles */
+/* .loading-spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #28a745;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} */
+
+
+
+/* < ----------------------------------------------------------- > */
+
+/* Main Welcome Page Styles */
+.welcome-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  text-align: center;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;  /* Smooth fade-out animation */
+}
+
+.welcome-page.fade-out {
+  opacity: 0;  /* Fade-out effect when "Enter" is clicked */
+}
+
+.welcome-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.welcome-image img {
+  max-width: 70%;
+  height: auto;
+}
+
+.welcome-content {
+  text-align: center;
+}
+
+.welcome-content .logo {
+  width: 60px;
 }
 
 .welcome-content h1 {
@@ -396,8 +548,41 @@ footer ul li:hover {
   background-color: #218838;
 }
 
+/* Loading spinner styles */
+.loading-spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #28a745;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Fade-in animation for content after loading */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards ease-in;  /* Smooth fade-in over 1 second */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);  /* Content starts slightly lower */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);  /* Move to original position */
+  }
+}
 
 
+
+/* < ---------------------------------------------------- > */
 /* Common header, footer, and main content styles */
 /* .LegalAidDashboard .header {
   background-color: white;
@@ -679,6 +864,7 @@ form textarea {
 
 
 
+/* < -------------------------------------------------- > */
 /* Judge */
 
 .app {

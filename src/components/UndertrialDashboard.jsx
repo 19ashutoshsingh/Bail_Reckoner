@@ -222,15 +222,15 @@ function UndertrialDashboard() {
               </div>
 
               <label>
-                Imprisonment Served
+                Imprisonment Served (in years)
                 <input type="text" placeholder="Years of imprisonment" />
               </label>
               <label>
-                Bail Bond
+                Bail Bond (in Rs.)
                 <input type="text" placeholder="Bail Bond" />
               </label>
               <label>
-                Surety Bond
+                Surety Bond (in Rs.)
                 <input type="text" placeholder="Surety Bond" />
               </label>
               <button className="submit-button" type="submit">Submit Details</button>
@@ -241,18 +241,28 @@ function UndertrialDashboard() {
             <h3>NLP & ML Results</h3>
             <label>
               Information Extracted by NLP
-              <textarea placeholder="Information Extracted by NLP"></textarea>
+              <p>The individual, Aman Kumar, is facing charges for cybercrime and crimes against women, including online harassment, unauthorized data access, and misuse of digital platforms to intimidate and exploit women. Legal action has been initiated under relevant cyber and gender protection laws.</p>
             </label>
             <div className="ml-prediction">
-              <p>ML Prediction: Bail Eligibility</p>
+              
+              <h4>Sections</h4>
+              <div className='sections'>
+                <p>Section 66C - Identity Theft</p>
+                <p>Section 66D - Cheating by Personation Using Computer Resources</p>
+                <p>Section 66E - Violation of Privacy</p>
+                <p>Section 67 - Publishing or Transmitting Obscene Material in Electronic Form</p>
+              </div>
+
+              <h4>ML Prediction: Bail Eligibility</h4>
               <label>
-                <input type="radio" name="eligibility" value="eligible" />
+                {/* <input type="radio" name="eligibility" value="eligible" /> */}
                 Eligible
               </label>
-              <label>
+              {/* <label>
                 <input type="radio" name="eligibility" value="not-eligible" />
                 Not Eligible
-              </label>
+              </label> */}
+              
             </div>
           </div>
         </div>
